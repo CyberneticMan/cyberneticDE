@@ -1,0 +1,13 @@
+#!/usr/bin/sh
+
+# Composite manager
+xcompmgr -c &
+
+# Wallpaper manager initialization
+nitrogen --restore &
+
+# Terminal initialization
+urxvtd -q -o -f &
+
+# Polybar at top of desktop start
+[[ $(command -v polybar) ]] && sh ~/.bin/bar_start &

@@ -1,0 +1,21 @@
+! color scheme
+#include ".color/dui"
+
+! Icon in taskbar and pager
+URxvt.iconFile: /home/kyber/.icons/terminal.svg
+
+! Terminal fonts
+URxvt.font: xft:Hack:size=10
+URxvt.boldFont: xft:Hack:size=10
+
+! GUI settings
+URxvt.scrollBar: false
+URxvt.cursorBlink: true
+URxvt*scrollWithBuffer: true
+URxvt*scrollTtyKeypress: false
+
+! Extensions
+URxvt.perl-ext-common: default,clipboard
+Urxvt.clipboard.autocopy: true
+URxvt.keysym.M-w: eval:selection_to_clipboard
+URxvt.keysym.C-y: eval:paste_clipboard
