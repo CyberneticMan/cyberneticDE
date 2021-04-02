@@ -1,0 +1,92 @@
+!! Pelangi by Addy
+!! Inspired by Onyx by Dana Jansens Neechan
+
+!! Menu background
+menu.items.bg: flat
+menu.items.bg.color:  #161720
+menu.overlap.x: -6
+
+!! Menu text
+menu.items.text.color: #b3b3ae
+menu.items.justify: left
+menu.items.disabled.text.color: #8a8a8a
+
+!! Menu separator
+menu.separator.padding.height: 2
+menu.separator.color: #161720
+
+!! Menu border
+menu.border.width: 6
+menu.border.color: #161720
+
+!! Menu headers
+menu.title.bg: flat
+menu.title.bg.color: #161720
+menu.title.text.color: #f8f8f2
+menu.title.text.justify: center
+
+!! Selected menu item
+menu.items.active.bg: gradient horizontal flat
+menu.items.active.bg.color: #7da6ff 
+menu.items.active.bg.colorTo: #b4b6e4
+menu.items.active.text.color: #161720
+
+!! Titlebar
+window.active.title.bg: gradient horizontal flat
+window.active.title.bg.color: #cc619f
+window.active.title.bg.colorTo: #8be9fd
+window.inactive.title.bg: gradient horizontal flat
+window.inactive.title.bg.color: #9b78cc
+window.inactive.title.bg.colorTo: #8be9fd
+
+!! Titlebar text
+window.label.text.justify: center
+window.active.label.bg: parentrelative
+window.active.label.text.color: #161720
+window.inactive.label.bg: parentrelative
+window.inactive.label.text.color: #606060
+
+!! Window buttons
+window.*.button.*.bg: parentrelative
+window.active.button.*.hover.bg: flat
+window.inactive.button.*.hover.bg: parentrelative
+window.*.button.*.pressed.bg: flat
+
+window.active.button.*.image.color: #8be9fd
+window.active.button.disabled.image.color: #8be9fd
+window.inactive.button.*.image.color: #8be9fd
+window.inactive.button.disabled.image.color: #8be9fd
+
+window.active.button.*.hover.bg.color: #8be9fd
+window.active.button.*.pressed.bg.color: #161720
+window.active.button.close.hover.image.color: #ff5555
+window.active.button.max.hover.image.color: #f1fa8c
+window.active.button.iconify.hover.image.color: #50fa7b
+window.active.button.shade.hover.image.color: #e3788f
+window.active.button.desk.hover.image.color: #e3788f
+window.inactive.button.*.pressed.bg.color: #4ab5ff
+
+!! Borders
+window.active.border.color: #161720
+window.inactive.border.color: #161720
+border.width: 0
+padding.width: 2
+padding.height: 0
+window.handle.width: 0
+window.active.client.color:  #161720
+window.inactive.client.color:  #161720
+window.client.padding.width: 0
+window.client.padding.height: 0
+
+!! On-screen displays
+osd.border.width: 1
+osd.border.color: #161720
+osd.label.text.color: #d8d8d8
+osd.bg: flat
+osd.bg.color: #161720
+osd.label.bg: flat solid
+osd.label.bg.color: #161720
+osd.hilight.bg: flat
+osd.hilight.bg.color: #7da6ff 
+osd.unhilight.bg: flat
+osd.unhilight.bg.color: #b4b6e4
