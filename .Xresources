@@ -1,5 +1,5 @@
 ! color scheme
-#include ".color/dui"
+#include ".colors/colors_pallete"
 
 ! Icon in taskbar and pager
 URxvt.iconFile: /home/kyber/.icons/terminal.svg

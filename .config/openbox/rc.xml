@@ -49,7 +49,7 @@
 </placement> <!-- Complete -->
 
 <theme>
-  <name>Cybernetic-Blue</name>
+  <name>openbox_theme</name>
   <titleLayout></titleLayout>
   <!--
       available characters are NDSLIMC, each can occur at most once.
