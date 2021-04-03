@@ -1,8 +1,10 @@
 [colors]
 background = ${xrdb:background}
 foreground = #FFFFFF
-accent = #798BC7
-text = #9BAEC8
+# accent = #798BC7
+accent = ${xrdb:color2}
+# text = #9BAEC8
+text = ${xrdb:color4}
 
 [settings]
 screenchange-reload = true
