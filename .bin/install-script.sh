@@ -2,7 +2,7 @@
 
 rm -rf .git
 mv --target-directory=$HOME $HOME/cyberneticDE/{*,.*}
-sudo pacman -S --noconfirm --needed base-devel xorg-server xorg-xinit xcompmgr xdotool openbox nitrogen rxvt-unicode tmux nautilus ttf-font-awesome ttf-ubuntu-font-family ttf-hack lxappearance firefox eog tint2
+sudo pacman -S --noconfirm --needed base-devel xorg-server xorg-xinit xcompmgr xdotool openbox nitrogen rxvt-unicode tmux nautilus ttf-font-awesome ttf-ubuntu-font-family ttf-hack lxappearance firefox eog tint2 lightdm
 git clone https://aur.archlinux.org/polybar.git
 cd polybar
 makepkg -si --skipinteg --noconfirm
@@ -14,6 +14,13 @@ git clone https://github.com/zdharma/fast-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-autosuggestions
 cd $HOME
 mv .zshrc-cybernetic .zshrc
+git clone https://github.com/prikhi/lightdm-mini-greeter
+cd lightdm-mini-greeter
+makepkg -si --skipinteg --noconfirm
+cd..
+rm -rf lightdm-mini-greeter
+sudo cp -r .wall /etc/lightdm
+sudo mv lightdm-mini-greeter.conf /etc/lightdm/lightdm-mini-greeter.conf
 sudo mv xorg.conf.d /etc/X11
 git clone https://aur.archlinux.org/urxvt-clipboard.git
 cd urxvt-clipboard
