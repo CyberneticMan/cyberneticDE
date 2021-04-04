@@ -13,6 +13,11 @@ cd $ZSH/custom/plugins
 git clone https://github.com/zdharma/fast-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-autosuggestions
 cd $HOME
+git clone https://aur.archlinux.org/netwmpager.git
+cd netwmpager
+makepkg -si --skipinteg --noconfirm
+cd..
+rm -rf netwmpager
 mv .zshrc-cybernetic .zshrc
 git clone https://github.com/prikhi/lightdm-mini-greeter
 cd lightdm-mini-greeter
