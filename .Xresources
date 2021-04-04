@@ -1,9 +1,6 @@
 ! color scheme
 #include ".colors/colors_pallete"
 
-! Icon in taskbar and pager
-URxvt.iconFile: /home/kyber/.icons/terminal.svg
-
 ! Terminal fonts
 URxvt.font: xft:Hack:size=10
 URxvt.boldFont: xft:Hack:size=10
