@@ -1,5 +1,8 @@
 #!/usr/bin/sh
 
+# Screen locker
+light-locker --lock-on-suspend &
+
 # Composite manager
 xcompmgr -c &
 
@@ -13,5 +16,5 @@ sh -c '~/.bin/term_bg' &
 # Polybar at top of desktop start
 [[ $(command -v polybar) ]] && sh ~/.bin/bar_start &
 
-# Tint2 button panel at the down of desktop start
-tint2 -c ~/.config/tint2/button.tint2rc
+# Tint2 button panel at down of desktop start
+tint2 -c ~/.config/tint2/button.tint2rc &
