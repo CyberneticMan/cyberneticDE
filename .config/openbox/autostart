@@ -8,6 +8,7 @@ nitrogen --restore &
 
 # Terminal initialization
 urxvtd -q -o -f &
+sh -c '~/.bin/term_bg' &
 
 # Polybar at top of desktop start
 [[ $(command -v polybar) ]] && sh ~/.bin/bar_start &
