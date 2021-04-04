@@ -8,7 +8,9 @@ nitrogen --restore &
 
 # Terminal initialization
 urxvtd -q -o -f &
-#sh -c ~/.bin/term_bg & #start script for transparent terminal as background
 
 # Polybar at top of desktop start
 [[ $(command -v polybar) ]] && sh ~/.bin/bar_start &
+
+# Tint2 button panel at the down of desktop start
+tint2 -c ~/.config/tint2/button.tint2rc
