@@ -1,7 +1,7 @@
 #!/usr/bin/sh
 
 # Screen locker
-light-locker --lock-on-suspend &
+light-locker --lock-on-suspend --lock-on-lid &
 
 # Composite manager
 xcompmgr -c &
