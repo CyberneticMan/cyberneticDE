@@ -1,10 +1,8 @@
 [colors]
 background = ${xrdb:background}
 foreground = #FFFFFF
-# accent = #798BC7
-accent = ${xrdb:color2}
-# text = #9BAEC8
-text = ${xrdb:color4}
+accent = #798BC7
+text = #9BAEC8
 
 [settings]
 screenchange-reload = true
@@ -46,7 +44,7 @@ font-2 = "Font Awesome 5 Free:style=Solid:pixelsize=12;2"
 font-3 = "Font Awesome 5 Brands:pixelsize=12;2"
 font-4 = "Hack:pixelsize=8:antialias=false;2"
 
-modules-left = workspaces title
+modules-left = pwrmng title
 modules-center = date pulseaudio xkeyboard
 modules-right = cpu memory battery
 
@@ -58,29 +56,14 @@ override-redirect = false
 enable-ipc = true
 
 # ##########################################
-[module/workspaces]
-type = internal/xworkspaces
-pin-workspaces = false
-enable-click = true
-enable-scroll = false
-icon-0 = Workshop;
-icon-1 = Entertainment;
-format = <label-state>
-label-active = %icon%
-label-active-foreground = ${colors.accent}
-label-active-background = ${xrdb:color0}
-label-active-underline = ${colors.accent}
-label-active-padding = 3
-label-empty = %icon%
-label-empty-padding = 3
-label-empty-foreground = ${colors.text}
-label-occupied = %icon%
-label-occupied-foreground = ${colors.accent}
-label-occupied-background = ${xrdb:color0}
-label-occupied-padding = 3
-label-urgent = %icon%
-label-urgent-foreground = ${xrdb:color5}
-label-urgent-padding = 3
+[module/pwrmng]
+type = custom/text
+content = " "
+content-foreground = ${colors.accent}
+content-background = ${colors.background}
+click-left = shutdown -h now
+click-right = systemctl suspend
+click-middle = reboot
 
 [module/title]
 type = internal/xwindow
