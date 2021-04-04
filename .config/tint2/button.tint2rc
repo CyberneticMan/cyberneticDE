@@ -150,12 +150,12 @@ ac_disconnected_cmd =
 button = new
 button_text = 
 button_lclick_command = sh $HOME/.bin/toggle-bar.sh
-button_rclick_command = $HOME/.bin/toggle-pager.sh
+button_rclick_command = sh $HOME/.bin/toggle-pager.sh
 button_mclick_command = 
 button_uwheel_command = 
 button_dwheel_command = 
 button_font = Font Awesome 5 Free 10
-button_font_color = #aeb4c6 100
+button_font_color = #798BC7 100
 button_padding = 5 0
 button_background_id = 0
 button_centered = 0
@@ -171,7 +171,7 @@ button_mclick_command = sh -c '~/.bin/term_bg'
 button_uwheel_command = 
 button_dwheel_command = 
 button_font = Font Awesome 5 Free 8
-button_font_color = #aeb4c6 100
+button_font_color = #798BC7 100
 button_padding = 5 0
 button_background_id = 0
 button_centered = 0
@@ -180,14 +180,14 @@ button_max_icon_size = 0
 #-------------------------------------
 # Button 3 
 button = new
-button_text = 
-button_lclick_command = firefox
-button_rclick_command = firefox --private
+button_text = 
+button_lclick_command = nautilus
+button_rclick_command =
 button_mclick_command = 
 button_uwheel_command = 
 button_dwheel_command = 
 button_font = Font Awesome 5 Free 8
-button_font_color = #aeb4c6 100
+button_font_color = #798BC7 100
 button_padding = 5 0
 button_background_id = 0
 button_centered = 0
@@ -196,21 +196,21 @@ button_max_icon_size = 0
 #-------------------------------------
 # Button 4 
 button = new
-button_text = 
-button_lclick_command = xkill
-button_rclick_command = polybar-msg cmd toggle
-button_mclick_command = $HOME/.bin/toggle-tint.sh
+button_text = 
+button_lclick_command = firefox
+button_rclick_command = firefox --private
+button_mclick_command = 
 button_uwheel_command = 
 button_dwheel_command = 
 button_font = Font Awesome 5 Free 8
-button_font_color = #aeb4c6 100
+button_font_color = #798BC7 100
 button_padding = 5 0
 button_background_id = 0
 button_centered = 0
 button_max_icon_size = 0
 
 #-------------------------------------
-# Button 5 | THIS FUNCTION IS NOT NEED FOR ME
+# Button 5
 button = new
 button_text = 
 button_lclick_command = discord
@@ -219,7 +219,7 @@ button_mclick_command =
 button_uwheel_command = 
 button_dwheel_command = 
 button_font = Font Awesome 5 Free 9
-button_font_color = #aeb4c6 100
+button_font_color = #798BC7 100
 button_padding = 5 0
 button_background_id = 0
 button_centered = 0
