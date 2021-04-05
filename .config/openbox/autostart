@@ -18,3 +18,9 @@ sh -c '~/.bin/term_bg' &
 
 # Tint2 button panel at down of desktop start
 tint2 -c ~/.config/tint2/button.tint2rc &
+
+# Tint2 tray
+tint2 -c ~/.config/tint2/hide_tray.tint2rc &
+
+# System tray applets
+nm-applet #Network-manager
