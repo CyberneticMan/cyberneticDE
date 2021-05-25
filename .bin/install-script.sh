@@ -2,7 +2,7 @@
 
 rm -rf .git
 mv --target-directory=$HOME $HOME/cyberneticDE/{*,.*}
-sudo pacman -S --noconfirm --needed base-devel xorg-server xorg-xinit xcompmgr xdotool openbox nitrogen rxvt-unicode tmux nautilus ttf-font-awesome ttf-ubuntu-font-family ttf-hack lxappearance firefox eog tint2 lightdm light-locker network-manager-applet npm nodejs-lts-fermium clang gsimplecal
+sudo pacman -S --noconfirm --needed base-devel xorg-server xorg-xinit xcompmgr xdotool openbox nitrogen rxvt-unicode tmux nautilus ttf-font-awesome ttf-ubuntu-font-family ttf-hack lxappearance firefox eog tint2 lightdm light-locker network-manager-applet npm nodejs-lts-fermium clang gsimplecal tlp
 git clone https://aur.archlinux.org/polybar.git
 cd polybar
 makepkg -si --skipinteg --noconfirm
@@ -32,3 +32,6 @@ cd urxvt-clipboard
 makepkg -si --skipinteg --noconfirm
 cd ..
 rm -rf urxvt-clipboard
+systemctl enable lightdm
+systemctl enable NetworkManager
+systemctl enable tlp
