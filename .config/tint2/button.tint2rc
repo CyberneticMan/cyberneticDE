@@ -146,9 +146,9 @@ ac_connected_cmd =
 ac_disconnected_cmd = 
 
 #-------------------------------------
-# Button 1
+# Button 1 Менеджер десктопов и окон
 button = new
-button_text = 
+button_text = 
 button_lclick_command = sh $HOME/.bin/toggle-bar.sh
 button_rclick_command = sh $HOME/.bin/toggle-pager.sh
 button_mclick_command = 
@@ -162,9 +162,9 @@ button_centered = 0
 button_max_icon_size = 0
 
 #-------------------------------------
-# Button 2
+# Button 2 Терминалы
 button = new
-button_text = 
+button_text = 
 button_lclick_command = urxvt -name terminal
 button_rclick_command = 
 button_mclick_command = sh -c '~/.bin/term_bg'
@@ -178,58 +178,9 @@ button_centered = 0
 button_max_icon_size = 0
 
 #-------------------------------------
-# Button 3 
-button = new
-button_text = 
-button_lclick_command = nautilus
-button_rclick_command =
-button_mclick_command = 
-button_uwheel_command = 
-button_dwheel_command = 
-button_font = Font Awesome 5 Free 8
-button_font_color =  #9BAEC8 100
-button_padding = 5 0
-button_background_id = 0
-button_centered = 0
-button_max_icon_size = 0
-
-#-------------------------------------
-# Button 4 
-button = new
-button_text = 
-button_lclick_command = firefox
-button_rclick_command = firefox --private
-button_mclick_command = 
-button_uwheel_command = 
-button_dwheel_command = 
-button_font = Font Awesome 5 Free 8
-button_font_color =  #9BAEC8 100
-button_padding = 5 0
-button_background_id = 0
-button_centered = 0
-button_max_icon_size = 0
-
-#-------------------------------------
-# Button 5
-button = new
-button_text = 
-button_lclick_command = discord
-button_rclick_command =
-button_mclick_command = 
-button_uwheel_command = 
-button_dwheel_command = 
-button_font = Font Awesome 5 Free 9
-button_font_color =  #9BAEC8 100
-button_padding = 5 0
-button_background_id = 0
-button_centered = 0
-button_max_icon_size = 0
-
-#-------------------------------------
 # Tooltip
 tooltip_show_timeout = 0
 tooltip_hide_timeout = 0
 tooltip_padding = 0 0
 tooltip_background_id = -1
 tooltip_font_color = #000000 100
-
