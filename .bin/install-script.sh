@@ -2,7 +2,7 @@
 
 rm -rf .git
 mv --target-directory=$HOME $HOME/cyberneticDE/{*,.*}
-sudo pacman -S --noconfirm --needed base-devel xorg-server xorg-xinit xcompmgr openbox nitrogen rxvt-unicode tmux nautilus ttf-font-awesome ttf-ubuntu-font-family ttf-hack firefox eog tint2 lightdm light-locker network-manager-applet npm nodejs-lts-fermium clang gsimplecal tlp
+sudo pacman -S --noconfirm --needed base-devel xorg-server xorg-xinit xcompmgr openbox nitrogen rxvt-unicode tmux nautilus ttf-font-awesome ttf-ubuntu-font-family ttf-hack firefox eog tint2 lightdm light-locker network-manager-applet npm nodejs-lts-fermium clang gsimplecal tlp rofi
 git clone https://aur.archlinux.org/polybar.git
 cd polybar
 makepkg -si --skipinteg --noconfirm
