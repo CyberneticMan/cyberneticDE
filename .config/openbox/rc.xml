@@ -245,6 +245,7 @@
   </keybind>
 
   <!-- Keybindings for running applications -->
+    <!--
 	<keybind key="C-A-t">
 		<action name="Execute">
 			<startupnotify>
@@ -255,16 +256,8 @@
 			<command>urxvt</command>
 		</action>
 	</keybind>
-	<keybind key="C-A-f">
-		<action name="Execute">
-			<startupnotify>
-				<enabled>yes</enabled>
-				<name>File manager</name>
-				<icon>/home/kyber/.icons/file-manager.svg</icon>
-			</startupnotify>
-			<command>nautilus</command>
-		</action>
-	</keybind>
+    -->
+    <!--
 	<keybind key="C-A-b">
 		<action name="Execute">
 			<startupnotify>
@@ -275,11 +268,18 @@
 			<command>firefox</command>
 		</action>
 	</keybind>
-	<!--keybind key="C-space"-->
-		<!--action name="ShowMenu"><menu>root-menu</menu></action-->
-	<!--/keybind-->
+    -->
+    <keybind key="C-space">
+            <action name="Execute">
+                    <startupnotify>
+                            <enabled>yes</enabled>
+                            <name>Rofi</name>
+                    </startupnotify>
+                    <command>rofi -show run</command>
+            </action>
+    </keybind>
 
-	<!-- Keybindings for window snapping -->
+		<!-- Keybindings for window snapping -->
 	<keybind key="W-Left">
     <action name="UnmaximizeFull"/>
     <action name="MaximizeVert"/>
