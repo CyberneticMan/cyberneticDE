@@ -57,7 +57,7 @@ enable-ipc = true
 # ##########################################
 [module/app]
 type = custom/text
-content = %{A3:rofi -show run -location 1 -xoffset 15 -yoffset 39 -line-padding 4 -columns 1 -width 25 -lines 10 -padding 15 & disown:}%{A}
+content = %{A3:rofi -show & disown:}%{A}
 content-foreground = ${colors.accent}
 content-background = ${xrdb:color0}
 content-padding = 3 
