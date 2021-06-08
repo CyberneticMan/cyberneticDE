@@ -24,7 +24,7 @@ cd lightdm-mini-greeter
 makepkg -si --skipinteg --noconfirm
 cd..
 rm -rf lightdm-mini-greeter
-sudo cp -r .wall /etc/lightdm
+sudo cp .wall/arch.jpg /etc/lightdm/wallpaper
 sudo mv lightdm-mini-greeter.conf /etc/lightdm/lightdm-mini-greeter.conf
 sudo mv xorg.conf.d /etc/X11
 git clone https://aur.archlinux.org/urxvt-clipboard.git
