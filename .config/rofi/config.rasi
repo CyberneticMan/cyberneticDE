@@ -1,24 +1,25 @@
 configuration {
   theme: "default.rasi";
-  show-icons: true;
-  icon-theme: "Qogir-dark";
+  show-icons: false;
   font: "ClearSansMedium 9";
   terminal: "urxvt";
-  modi: "drun,run,window";
+  modi: "run";
   width: 25;
-  lines: 7;
+  lines: 1;
   columns: 1;
   bw: 7;
-  location: 0;
+  location: 1;
+  xoffset: 33;
   padding: 20;
   ssh-client: "ssh";
   ssh-command: "{terminal} -e {ssh-client} {host} [-p {port}]";
   run-command: "{cmd}";
   run-shell-command: "{terminal} -e {cmd}";
   window-command: "wmctrl -i -R {window}";
-  sidebar-mode: true;
+  sidebar-mode: false;
   line-margin: 10;
   separator-style: "none";
   hide-scrollbar: true;
   scrollbar-width: 0;
+  click-to-exit: true; 
 }
