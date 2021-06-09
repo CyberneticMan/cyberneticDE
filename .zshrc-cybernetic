@@ -92,7 +92,7 @@ source $ZSH/oh-my-zsh.sh
 # You may need to manually set your language environment
 export LANG=ru_RU.UTF-8
 export TERM="rxvt-256color"
-export EDITOR="vim"
+export EDITOR="nvim"
 export BROWSER="firefox"
 export XDG_CONFIG_HOME="$HOME/.config"
 
