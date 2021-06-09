@@ -57,14 +57,15 @@ enable-ipc = true
 # ##########################################
 [module/app]
 type = custom/text
-content = %{A3:rofi -show & disown:}%{A}
+content = 
 content-foreground = ${colors.accent}
 content-background = ${xrdb:color0}
 content-padding = 3 
+click-left = rofi -show & disown
 
 [module/pwrmng]
 type = custom/text
-content = "     "
+content = "    "
 content-foreground = ${colors.accent}
 content-background = ${xrdb:color0}
 click-left = shutdown -h now
