@@ -68,8 +68,7 @@ content = "     "
 content-foreground = ${colors.accent}
 content-background = ${xrdb:color0}
 click-left = shutdown -h now
-click-right = systemctl suspend
-# click-middle = reboot
+click-right = reboot
 
 [module/date]
 type = internal/date
