@@ -2,7 +2,7 @@
 
 rm -rf .git
 mv --target-directory=$HOME $HOME/cyberneticDE/{*,.*}
-sudo pacman -S --noconfirm --needed base-devel xorg-server xorg-xinit xcompmgr openbox nitrogen rxvt-unicode tmux ttf-font-awesome ttf-ubuntu-font-family ttf-hack firefox eog tint2 lightdm light-locker network-manager-applet npm nodejs-lts-fermium clang gsimplecal tlp rofi ranger w3m acpilight xf86-input-synaptics atool zip unzip unrar p7zip mpd ncmpcpp mpv fftw ncurses iniparsev
+sudo pacman -S --noconfirm --needed base-devel xorg-server xorg-xinit xcompmgr openbox nitrogen rxvt-unicode tmux ttf-font-awesome ttf-ubuntu-font-family ttf-hack firefox eog tint2 lightdm light-locker network-manager-applet npm nodejs-lts-fermium clang gsimplecal tlp rofi ranger w3m acpilight xf86-input-synaptics atool zip unzip unrar p7zip mpd ncmpcpp mpv fftw ncurses iniparsev bluez bluez-utils pulseaudio pulseaudio-bluetooth pavucontrol
 git clone https://aur.archlinux.org/polybar.git
 cd polybar
 makepkg -si --skipinteg --noconfirm
@@ -46,3 +46,4 @@ systemctl enable lightdm
 systemctl enable NetworkManager
 systemctl enable tlp
 systemctl --user enable mpd
+systemctl enable bluetooth.service
