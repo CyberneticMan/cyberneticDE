@@ -11,10 +11,10 @@ nitrogen --restore &
 
 # Terminal initialization
 urxvtd -q -o -f &
-sh -c '~/.bin/term_bg' &
+sh $HOME/.bin/term_bg.sh &
 
 # Polybar at top of desktop start
-[[ $(command -v polybar) ]] && sh ~/.bin/bar_start &
+[[ $(command -v polybar) ]] && sh $HOME/.bin/bar_start.sh &
 
 # Tint2 button panel at down of desktop start
 tint2 -c ~/.config/tint2/button.tint2rc &
