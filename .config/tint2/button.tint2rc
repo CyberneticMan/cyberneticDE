@@ -167,7 +167,7 @@ button = new
 button_text = 
 button_lclick_command = urxvt -name terminal
 button_rclick_command = 
-button_mclick_command = sh -c '~/.bin/term_bg'
+button_mclick_command = sh $HOME/.bin/term_bg.sh
 button_uwheel_command = 
 button_dwheel_command = 
 button_font = Font Awesome 5 Free 8
@@ -194,7 +194,23 @@ button_centered = 0
 button_max_icon_size = 0
 
 #-------------------------------------
-# Button 4 Скриншоты и скринкаты 
+# Button 4 Включение и выключени тачпада
+button = new
+button_text = 
+button_lclick_command = sh $HOME/.bin/synaptic.sh
+button_rclick_command = 
+button_mclick_command = 
+button_uwheel_command = 
+button_dwheel_command =
+button_font = Font Awesome 5 Free 10
+button_font_color =  #9BAEC8 100
+button_padding = 5 0
+button_background_id = 0
+button_centered = 0
+button_max_icon_size = 0
+
+#-------------------------------------
+# Button 5 Скриншоты и скринкаты 
 # 
 #-------------------------------------
 # Tooltip
