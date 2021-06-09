@@ -2,7 +2,7 @@
 
 rm -rf .git
 mv --target-directory=$HOME $HOME/cyberneticDE/{*,.*}
-sudo pacman -S --noconfirm --needed base-devel xorg-server xorg-xinit xcompmgr openbox nitrogen rxvt-unicode tmux ttf-font-awesome ttf-ubuntu-font-family ttf-hack firefox eog tint2 lightdm light-locker network-manager-applet npm nodejs-lts-fermium clang gsimplecal tlp rofi ranger w3m
+sudo pacman -S --noconfirm --needed base-devel xorg-server xorg-xinit xcompmgr openbox nitrogen rxvt-unicode tmux ttf-font-awesome ttf-ubuntu-font-family ttf-hack firefox eog tint2 lightdm light-locker network-manager-applet npm nodejs-lts-fermium clang gsimplecal tlp rofi ranger w3m acpilight
 git clone https://aur.archlinux.org/polybar.git
 cd polybar
 makepkg -si --skipinteg --noconfirm
@@ -27,6 +27,7 @@ rm -rf lightdm-mini-greeter
 sudo cp .wall/arch.jpg /etc/lightdm/.wall/wallpaper
 sudo mv lightdm-mini-greeter.conf /etc/lightdm/lightdm-mini-greeter.conf
 sudo mv xorg.conf.d /etc/X11
+sudo mv 90-backlight.rules /etc/udev/rules.d/
 git clone https://aur.archlinux.org/urxvt-clipboard.git
 cd urxvt-clipboard
 makepkg -si --skipinteg --noconfirm
