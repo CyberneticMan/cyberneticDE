@@ -2,8 +2,8 @@
 #include ".colors/colors_pallete"
 
 ! Terminal fonts
-URxvt.font: xft:Hack:size=10
-URxvt.boldFont: xft:Hack:size=10
+URxvt.font: xft:Ubuntu Mono:size=12
+URxvt.boldFont: xft:Ubuntu Mono Bold:size=12
 
 ! GUI settings
 URxvt.scrollBar: false

@@ -32,6 +32,17 @@ else
   tmux new-window -t $SESSION:3 -n 'Web-browser'
   tmux send-keys "w3m https://duckduckgo.com" C-m
   #
+  tmux new-window -t $SESSION:4 -n 'Music'
+  tmux send-keys "ncmpcpp" C-m
+  tmux split-window -h
+  tmux select-pane -t 1
+  tmux resize-pane -R 10
+  tmux split-window -v
+  tmux resize-pane -D 1
+  tmux send-keys "cava" C-m
+  tmux select-pane -t 3
+  tmux send-keys C-m
+  #
   tmux select-window -t $SESSION:1
   tmux attach-session -t $SESSION
 fi
