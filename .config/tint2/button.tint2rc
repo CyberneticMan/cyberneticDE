@@ -210,8 +210,21 @@ button_centered = 0
 button_max_icon_size = 0
 
 #-------------------------------------
-# Button 5 Скриншоты и скринкаты 
-# 
+# Button 5 Скриншоты и скринкасты 
+button = new
+button_text = 
+button_lclick_command = scrot --overwrite $HOME/Images/Screenshots/'%m-%d_%H:%M:%S.jpg'
+button_rclick_command = sh $HOME/.bin/screencast.sh
+button_mclick_command = 
+button_uwheel_command = 
+button_dwheel_command =
+button_font = Font Awesome 5 Free 10
+button_font_color =  #9BAEC8 100
+button_padding = 5 0
+button_background_id = 0
+button_centered = 0
+button_max_icon_size = 0
+
 #-------------------------------------
 # Tooltip
 tooltip_show_timeout = 0

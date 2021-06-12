@@ -25,8 +25,8 @@ auto_hide = false
 switch_delay = 50
 
 # fonts
-popup_font = "Clear Sans Medium"
-window_font = "Clear Sans Medium"
+popup_font = "Ubuntu Medium"
+window_font = "Ubuntu Medium"
 
 # colors
 active_page_color = "#17181a"
